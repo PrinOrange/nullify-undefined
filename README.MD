@@ -15,6 +15,12 @@ So when you accidentally pass in a key whose value is undefined, an error will b
 
 So in order to safely serialize an object or a value, you can convert all Undefined to null, which is what this package does.
 
+### Install
+
+```bash
+npm install nullify-undefined
+```
+
 ### Usage
 
 For example, I need to transform all undefined values into null:
