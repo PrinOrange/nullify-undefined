@@ -1,17 +1,23 @@
 {
   "name": "nullify-undefined",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nullify all undefined key in the object and its value",
   "main": "index.js",
   "author": "edward-zhang",
   "license": "MIT",
   "types": "./index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "null",
     "undefined",
     "next.js"
-  ]
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrinOrange/nullify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PrinOrange/nullify/issues"
+  },
+  "homepage": "https://github.com/PrinOrange/nullify#readme"
 }
