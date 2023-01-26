@@ -5,8 +5,10 @@ When writing JavaScript or TypeScript, sometimes you will encounter the problem 
 For example, In [next.js]() developing when you pass an object with key of undefined value in `getStaticProps` or `getServerSideProps`, it will throw such the error:
 
 ```
-error - SerializableError: Error serializing '.Prop.value returned fram 'getStaticProps’in "/page/[..slug]".
-Reason: "undefined’ cannot be serialized as JSON.Please use 'null’or omit this value.
+error - SerializableError: 
+Error serializing '.Prop.value returned fram 'getStaticProps’in "/page/[..slug]".
+Reason: "undefined’ cannot be serialized as JSON.
+Please use 'null’or omit this value.
 ```
 
 The bad thing is: many of the Props passed wrote in TypeScript are Optional Keys, and there are a lot of structured sub-data.
