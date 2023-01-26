@@ -25,4 +25,4 @@ function Nullify(value) {
   return value;
 }
 
-export default Nullify;
+module.exports = Nullify;
