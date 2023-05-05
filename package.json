@@ -1,7 +1,7 @@
 {
   "name": "nullify-undefined",
   "version": "0.2.0",
-  "description": "Nullify all undefined key in the object and its value",
+  "description": "Better handle empty value issues in javascript objects.",
   "main": "./dist",
   "author": "edward-zhang",
   "license": "MIT",
