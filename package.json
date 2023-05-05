@@ -6,7 +6,7 @@
   "author": "edward-zhang",
   "license": "MIT",
   "scripts": {
-    "build:mjs": "tsc -p tsconfig.esm.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build": "npm run build:esm && npm run build:cjs",
     "test": "jest"
