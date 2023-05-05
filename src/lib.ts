@@ -100,6 +100,8 @@ export function removeNull(obj: any) {
 /**
  * Remove all empty values in JavaScript objects.
  * Contains the `undefined` and `null`.
+ * 
+ * **Note :** If the null or undefined are passed in, it will return the `undefined` only.
  * @param {any} obj - The JavaScript object to process.
  * @returns {any} - Returns the processed JavaScript object.
  */
