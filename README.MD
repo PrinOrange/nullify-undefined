@@ -1,4 +1,4 @@
-## NULLIFY ALL UNDEFINED VALUE
+## EMPTY HANDLING FOR JS OBJECT
 
 When writing JavaScript or TypeScript, sometimes you will encounter the problem of serializing undefined values and causing errors.
 
@@ -25,7 +25,15 @@ npm install nullify-undefined
 
 ### Usage
 
-For example, I need to transform all undefined values into null:
+This library provides two modular reference methods of `ESM` and `CommonJS module`. To import this library,
+
+```javascript
+import Nullify from 'nullify-undefined/esm'     // For esm
+
+var Nullify = require('nullify-undefined/cjs')  //For cjs
+```
+
+For example, I need to transform all `undefined` values into `null`:
 
 ```javascript
 var obj = {
@@ -38,11 +46,10 @@ var obj = {
 };
 ```
 
-use `Nullify` function
+use `nullifyUndefined` function
 
 ```javascript
-import Nullify from "nullify-undefined";
-Nullify(obj);
+Nullify.nullifyUndefined(obj);
 ```
 
 Output:
@@ -62,8 +69,17 @@ obj = {
 This function changes the value of the object passed in, and the return value is a reference to the passed object. If you don't want to change the passed object, you can make a deep copy of the passed object. like this:
 
 ```javascript
-Nullify({...obj});
+Nullify.nullifyUndefined({...obj});
 ```
+
+In addition, this library also provides some other functions. For example:
+
++ undefineNull : Replaces null values in JavaScript objects with undefined.
++ removeEmptyValue : Remove all empty values in JavaScript objects. Contains `null` and `undefined` value.
++ removeNull : Replaces all `null` values in JavaScript objects.
++ removeUndefined : Replaces all `undefined` values in JavaScript objects.
+
+Their usage is similar to the example above.
 
 ### LICENSE
 
